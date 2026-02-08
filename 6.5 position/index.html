@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <img src="rrb.jpg">
+    </div>
+    <div class="box2">Hello brother</div>
+    <h1>CSS POSITION PROPERTY</h1>
+    <p>The CSS position property specifies how an HTML element is positioned on a web page.
+It controls the placement of elements using the properties top, right, bottom, and left.</p>
+<h2>position: static</h2>
+<p>
+It is the default position of all HTML elements.
+
+Elements follow the normal document flow.
+
+The properties top, left, right, and bottom do not work.
+
+Example
+div {
+  position: static;
+}</p>
+<hr/>
+<h2>position: relative</h2>
+<p>The element is positioned relative to its normal position.
+
+Space for the element is still reserved.
+
+It is commonly used as a parent reference for absolutely positioned elements.</p>
+<p>EG:.box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+</p>
+<h2>position: absolute</h2>
+<p>The element is positioned relative to the nearest positioned ancestor (not static).
+
+If no such ancestor exists, it is positioned relative to the body.
+
+The element is removed from normal flow.
+
+No space is reserved for it.</p>
+<p>EG:.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+</p>
+<h2>position: fixed</h2>
+<p>The element is positioned relative to the browser window (viewport).
+
+It does not move while scrolling.
+
+Commonly used for navigation bars, chat icons, and ads.</p>
+<p>EG:.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+</p>
+<h2>position: sticky</h2>
+<p>The element behaves like relative until a scroll position is reached.
+
+After that, it behaves like fixed.
+
+It sticks to the specified position while scrolling.</p>
+<p>EG:.header {
+  position: sticky;
+  top: 0;
+}
+</p>
+<h2>Additional Properties</h2>
+<p>top, right, bottom, left
+
+Used to move positioned elements.
+
+Works only with relative, absolute, fixed, and sticky.</p>
+<p>EG:top: 10px;
+left: 20px;
+</p>
+</body>
+</html>
