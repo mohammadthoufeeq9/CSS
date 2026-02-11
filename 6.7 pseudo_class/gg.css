@@ -1,0 +1,22 @@
+a:link{
+    color: rgb(6, 0, 12);
+}
+a:hover{
+    color: aqua;
+    background-color: bisque;
+    font-size: 2pc;
+    transition: ease 2ms;
+    transition:color 20ms ease, background-color 1s ease;;
+}
+a:visited{
+    color: cornflowerblue;
+}
+li:nth-child(1){
+    background-color:wheat;
+}
+li:nth-child(even){
+    background-color: paleturquoise;
+}
+li:nth-child(10){
+    background-color: pink;
+}
