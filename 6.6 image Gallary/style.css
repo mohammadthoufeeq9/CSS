@@ -1,0 +1,36 @@
+body {
+    background: #111;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallary {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.cards{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 0;
+    padding: 0%;
+}  
+.cards img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.cards li{
+    overflow: hidden;
+    border-radius: 8px;
+}
+.cards img:hover{
+    transform: scale(1.05);
+}
